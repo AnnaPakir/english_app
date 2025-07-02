@@ -6,6 +6,15 @@
     <title>Gemini English Tutor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.3/24/outline/heroicons.min.css" />
+
+    <!-- =================================================================== -->
+    <!-- ДОБАВЛЕНО: Babel Standalone для трансляции JSX/TSX в браузере     -->
+    <!-- Эта библиотека "переводит" ваш React/TypeScript код в обычный    -->
+    <!-- JavaScript, который понимает браузер. Это исправляет проблему     -->
+    <!-- "черного экрана" на GitHub Pages.                                -->
+    <!-- =================================================================== -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <script type="importmap">
 {
   "imports": {
@@ -20,6 +29,12 @@
   </head>
   <body class="bg-slate-900 text-white font-sans">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+
+    <!-- =================================================================== -->
+    <!-- ИЗМЕНЕНО: Тип скрипта изменен на "text/babel".                     -->
+    <!-- Это указывает Babel, что нужно обработать (перевести) этот файл,  -->
+    <!-- прежде чем браузер его выполнит.                                  -->
+    <!-- =================================================================== -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
