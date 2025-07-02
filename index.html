@@ -25,8 +25,19 @@
   }
 }
 </script>
-  <link rel="stylesheet" href="/index.css">
-</head>
+  </head>
+  <body class="bg-slate-900 text-white font-sans">
+    <div id="root"></div>
+
+    <!-- =================================================================== -->
+    <!-- ИЗМЕНЕНО: Тип скрипта изменен на "text/babel" и добавлены пресеты. -->
+    <!-- Это указывает Babel, что нужно обработать (перевести) этот файл,  -->
+    <!-- используя правила для React и TypeScript, прежде чем браузер его   -->
+    <!-- выполнит. Это ключевое исправление для проблемы черного экрана.   -->
+    <!-- =================================================================== -->
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
+  </body>
+</html>
   <body class="bg-slate-900 text-white font-sans">
     <div id="root"></div>
 
