@@ -16,7 +16,7 @@ declare global {
 // ==========================================================================================
 
 // --- Configuration ---
-const GOOGLE_CLIENT_ID = 'ВАШ_GOOGLE_CLIENT_ID'; // <-- ЗАМЕНИТЕ ЭТО НА СВОЙ ID
+const GOOGLE_CLIENT_ID = '964856571599-1v6c6scu4l8leeoferjfhhrn0ftt4t3j.apps.googleusercontent.com'; // <-- ЗАМЕНИТЕ ЭТО НА СВОЙ ID
 const GOOGLE_DRIVE_FILENAME = 'gemini_english_tutor_data.json';
 
 
